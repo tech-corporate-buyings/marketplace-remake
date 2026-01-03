@@ -8,6 +8,7 @@
 *:focus {
   outline: none;
 }
+
 body {
   background: radial-gradient(circle at top, #fcfafc 0, #ffffff 45%);
   overflow-x: hidden;
@@ -29,6 +30,41 @@ header {
       transparent 50%
     ),
     linear-gradient(to bottom, #ffffff 0%, #fafbff 100%);
+}
+
+/* Ensure fixed header sits above content */
+header.fixed-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/* Default fallback spacing so content doesn't sit under the fixed header.
+   Exact padding is set dynamically via JS on load/resize. */
+body {
+  padding-top: 128px;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  .slider-section {
+    width: 107vw;
+  }
+  .testimonials-section {
+    width: 107vw;
+  }
 }
 
 .navbar {
@@ -124,6 +160,7 @@ svg {
 
 .hover-modal {
   position: absolute;
+  top: 98%;
   z-index: 99999;
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
@@ -250,9 +287,23 @@ svg {
 .brands-slider-wrapper {
   position: relative;
 }
+.clients-slider-wrapper {
+  position: relative;
+}
 
 .brands-slider-wrapper::before,
 .brands-slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+}
+.clients-slider-wrapper::before,
+.clients-slider-wrapper::after {
   content: "";
   position: absolute;
   top: 0;
@@ -267,8 +318,16 @@ svg {
   left: 0;
   background: linear-gradient(to right, white, transparent);
 }
+.clients-slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
 
 .brands-slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+.clients-slider-wrapper::after {
   right: 0;
   background: linear-gradient(to left, white, transparent);
 }
@@ -278,8 +337,13 @@ svg {
   gap: 48px;
   animation: scroll-left 24s linear infinite;
 }
+.clients-track {
+  display: inline-flex;
+  gap: 48px;
+  animation: scroll-left 24s linear infinite;
+}
 
-.brands-track:hover {
+.clients-track:hover {
   animation-play-state: paused;
 }
 
@@ -302,6 +366,25 @@ svg {
   object-fit: contain;
   user-select: none;
   cursor: pointer;
+}
+.client-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.client-link:hover {
+  opacity: 1;
+}
+
+.client-link img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  user-select: none;
 }
 
 @keyframes scroll-left {
@@ -427,6 +510,125 @@ input:focus {
 @media (max-width: 576px) {
   .brands-title {
     font-size: 1.25rem;
+  }
+}
+
+/* Testimonials */
+.testimonials-section {
+  background: #f9fafb;
+  padding: 80px 24px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+.testimonials-section .section-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 16px;
+  letter-spacing: -0.025em;
+}
+
+.testimonials-sub {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 40px -10px;
+  border: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+}
+
+.testimonial-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.testimonial-avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.testimonial-initials {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.testimonial-role {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 576px) {
+  .testimonials-section {
+    padding: 40px 16px;
+  }
+  .testimonials-title {
+    font-size: 1.5rem;
+  }
+  .testimonial-card {
+    padding: 20px;
+    min-height: 360px;
   }
 }
 
@@ -593,6 +795,17 @@ input:focus {
 
 #brandsRow4:hover {
   animation-play-state: paused;
+}
+
+.clienttitle b {
+  font-size: 2.5rem;
+  font-weight: 800;
+  /* color: #111827; */
+  margin-bottom: 16px;
+  letter-spacing: -0.025em;
+  background-image: linear-gradient(135deg, #e84a3d 0%, #2a348c 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Footer Styles */
