@@ -716,6 +716,9 @@ input:focus {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
+  background-image: linear-gradient(135deg, #e84a3d 0%, #2a348c 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .section-header small {
@@ -899,8 +902,8 @@ input:focus {
 }
 
 .feature-icon {
-  width: 56px;
-  height: 56px;
+  width: 30px;
+  height: 30px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -932,7 +935,6 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
