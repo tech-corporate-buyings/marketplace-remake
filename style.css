@@ -10,7 +10,10 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #fcfafc 0, #ffffff 45%);
+  background: radial-gradient(circle at top, #fcfafc 0, #f8f9fa 45%);
+  /* background: linear-gradient(135deg, #e84a3d 0%, #2a348c 100%);
+  background-blend-mode: overlay;opacity: 0.05;
+  opacity: 0.05; */
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -64,6 +67,76 @@ body {
   }
   .testimonials-section {
     width: 107vw;
+  }
+  .deals-row-wrapper {
+    width: 101vw;
+  }
+  .hero-carousel .carousel-item img {
+    object-fit: fill !important;
+  }
+  .category-card {
+    width: 40vw;
+  }
+  .testimonials-grid {
+    display: flex !important;
+    overflow-x: scroll;
+
+    .testimonial-text {
+      font-size: 0.5rem;
+      line-height: 1.4;
+      margin-bottom: 0px;
+    }
+    .testimonial-card {
+      padding: 20px;
+      min-height: 250px;
+    }
+    .testimonial-footer {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-top: 1px solid #f3f4f6;
+      padding-top: 0px;
+      margin-top: -10px;
+
+      .testimonial-initials {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.5rem;
+      }
+      .testimonial-name {
+        font-size: 0.5rem;
+      }
+      .testimonial-role {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .footer-feature {
+    .feature-icon {
+      width: 30px;
+      height: 30px;
+    }
+    h6 {
+      font-size: 0.6rem;
+    }
+    p {
+      font-size: 0.5rem;
+      font-weight: 600;
+    }
+    .payment-icons img {
+      width: 30px;
+    }
+  }
+  .clienttitle {
+    font-size: 0.9rem !important;
+    b {
+      font-size: 1.5rem !important;
+    }
   }
 }
 
@@ -339,7 +412,7 @@ svg {
 }
 .clients-track {
   display: inline-flex;
-  gap: 48px;
+  gap: 35px;
   animation: scroll-left 24s linear infinite;
 }
 
@@ -625,10 +698,6 @@ input:focus {
   }
   .testimonials-title {
     font-size: 1.5rem;
-  }
-  .testimonial-card {
-    padding: 20px;
-    min-height: 360px;
   }
 }
 
