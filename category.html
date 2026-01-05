@@ -16,872 +16,881 @@
 
 </head>
 
-<header class="fixed-top">
-    <nav class="navbar navbar-expand-lg shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <img src="/img/logo.png" alt="Corporate Buyings" width="160" height="48" class="img-fluid">
-            </a>
-            <form class="mx-auto my-1 my-lg-0 search-wrapper" role="search">
-                <div class="input-group search-pill px-2 align-items-center py-1">
-                    <span class="input-group-text bg-transparent border-0 px-2">
-                        <!-- <svg stroke="currentColor" fill="none"
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img src="/img/logo.png" alt="Corporate Buyings" width="160" height="48" class="img-fluid">
+                </a>
+                <form class="mx-auto my-1 my-lg-0 search-wrapper" role="search">
+                    <div class="input-group search-pill px-2 align-items-center py-1">
+                        <span class="input-group-text bg-transparent border-0 px-2">
+                            <!-- <svg stroke="currentColor" fill="none"
                           stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="16"
                           width="16" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="11" cy="11" r="8"></circle>
                           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg> -->
-                        🔍
-                    </span>
-                    <input class="form-control form-control-sm bg-transparent border-0" type="search"
-                        placeholder="Search for products, brands and more" aria-label="Search">
-                </div>
-            </form>
+                            🔍
+                        </span>
+                        <input class="form-control form-control-sm bg-transparent border-0" type="search"
+                            placeholder="Search for products, brands and more" aria-label="Search">
+                    </div>
+                </form>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerCollapse"
-                aria-controls="headerCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="headerCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerCollapse"
+                    aria-controls="headerCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 
-                <div class="d-flex align-items-center ms-auto justify-content-between gap-4 mt-2">
-                    <a class="nav-link top-link text-dark" href="https://corporatebuyings.com/login">Login</a>
-                    <a class="btn btn-danger btn-sm rounded-pill px-3 py-1 d-md-inline bg-linear-gradient border-0"
-                        href="https://corporatebuyings.com/">Corporate Website</a>
-                    <a href="/cart.html"
-                        class="position-relative ms-2 text-decoration-none text-dark d-inline-flex align-items-center justify-content-center rounded-circle p-2">
-                        <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                <div class="collapse navbar-collapse" id="headerCollapse">
+
+
+                    <div class="d-flex align-items-center ms-auto justify-content-between gap-4 mt-2">
+                        <a class="nav-link top-link text-dark" href="https://corporatebuyings.com/login">Login</a>
+                        <a class="btn btn-danger btn-sm rounded-pill px-3 py-1 d-md-inline bg-linear-gradient border-0"
+                            href="https://corporatebuyings.com/">Corporate Website</a>
+                        <a href="/cart.html"
+                            class="position-relative ms-2 text-decoration-none text-dark d-inline-flex align-items-center justify-content-center rounded-circle p-2">
+                            <!-- <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
                 stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="9" cy="21" r="1"></circle>
                 <circle cx="20" cy="21" r="1"></circle>
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
               </svg> -->
-                        🛒
-                        <span
-                            class="position-absolute translate-middle badge rounded-pill bg-danger cart-number">6</span>
-                    </a>
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <b>︙</b>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="/contactus.html">Contact Us</a></li>
-                        <li><a class="dropdown-item" href="/bulkenquiry.html">Bulk Enquiry</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
+                            🛒
+                            <span
+                                class="position-absolute translate-middle badge rounded-pill bg-danger cart-number">6</span>
+                        </a>
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>︙</b>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li class="bg-white"><a class="dropdown-item" href="/contactus.html">Contact Us</a></li>
+                            <li class="bg-light"><a class="dropdown-item" href="/bulkenquiry.html">Bulk Enquiry</a></li>
+                            <li class="bg-white"><a class="dropdown-item" href="#">Become CB Partner</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+
+        <nav class="category-nav shadow-sm">
+            <div class="container-fluid px-lg-5">
+                <ul
+                    class="nav py-1 d-flex flex-row flex-nowrap overflow-scroll align-items-center justify-content-between">
+                    <li class="nav-item text-center me-4 category-item">
+                        <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
+                            <img src="/img/electrical.avif" alt="Electrical" width="48"
+                                class="d-block mx-auto mb-1 border-0 background-transparent">
+                            <small>Electrical, Plumbing &amp; <br />Appliances</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center me-4 category-item">
+                        <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
+                            <img src="/img/all.jpg" alt="AMCs" width="48"
+                                class="d-block mx-auto mb-1 border-0 background-transparent">
+                            <small>AMCs</small>
+                        </a>
+
+                    </li>
+                    <li class="nav-item text-center me-4 category-item">
+                        <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
+                            <img src="/img/electrical.avif" alt="Corporate Gifts" width="36"
+                                class="d-block mx-auto mb-1 border-0 background-transparent">
+                            <small>Corporate Gifts</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center me-4 category-item">
+                        <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
+                            <img src="/img/electrical.avif" alt="Industrial Safety" width="36"
+                                class="d-block mx-auto mb-1 border-0 background-transparent">
+                            <small>Industrial Safety</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center me-4 category-item">
+                        <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
+                            <img src="/img/electrical.avif" alt="IT Supplies" width="36"
+                                class="d-block mx-auto mb-1 border-0 background-transparent">
+                            <small>IT Supplies</small>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center me-4 category-item">
+                        <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
+                            <img src="/img/electrical.avif" alt="Office Supplies" width="36"
+                                class="d-block mx-auto mb-1 border-0 background-transparent">
+                            <small>Office Supplies</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hover-modal">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6 class="sub-cat"><b>AWARDS & RECOGNITION</b></h6>
+                        <span class="bg-linear-gradient w-5"></span>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Medals</a></li>
+                            <li><a href="#">Momentoes</a></li>
+                            <li><a href="#">Trophies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="sub-cat"><b>BAGS</b></h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Backpacks</a></li>
+                            <li><a href="#">Laptop Bags</a></li>
+                            <li><a href="#">Trolley Bags</a></li>
+                            <li><a href="#">Jute Bags</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="sub-cat"><b>DRINKWARE</b></h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Ceramic Mugs</a></li>
+                            <li><a href="#">Copper Bottles</a></li>
+                            <li><a href="#">Steel Bottles</a></li>
+                            <li><a href="#">Sippers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="sub-cat"><b>GADGETS & APPAREL</b></h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Powerbanks</a></li>
+                            <li><a href="#">Smartwatches</a></li>
+                            <li><a href="#">T-shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-    </nav>
+        </nav>
+    </header>
 
-    <nav class="category-nav shadow-sm">
-        <div class="container-fluid px-lg-5">
-            <ul class="nav py-1 d-flex flex-row flex-nowrap overflow-scroll align-items-center justify-content-between">
-                <li class="nav-item text-center me-4 category-item">
-                    <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
-                        <img src="/img/electrical.avif" alt="Electrical" width="48"
-                            class="d-block mx-auto mb-1 border-0 background-transparent">
-                        <small>Electrical, Plumbing &amp; <br />Appliances</small>
-                    </a>
-                </li>
-                <li class="nav-item text-center me-4 category-item">
-                    <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
-                        <img src="/img/all.jpg" alt="AMCs" width="48"
-                            class="d-block mx-auto mb-1 border-0 background-transparent">
-                        <small>AMCs</small>
-                    </a>
-
-                </li>
-                <li class="nav-item text-center me-4 category-item">
-                    <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
-                        <img src="/img/electrical.avif" alt="Corporate Gifts" width="36"
-                            class="d-block mx-auto mb-1 border-0 background-transparent">
-                        <small>Corporate Gifts</small>
-                    </a>
-                </li>
-                <li class="nav-item text-center me-4 category-item">
-                    <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
-                        <img src="/img/electrical.avif" alt="Industrial Safety" width="36"
-                            class="d-block mx-auto mb-1 border-0 background-transparent">
-                        <small>Industrial Safety</small>
-                    </a>
-                </li>
-                <li class="nav-item text-center me-4 category-item">
-                    <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
-                        <img src="/img/electrical.avif" alt="IT Supplies" width="36"
-                            class="d-block mx-auto mb-1 border-0 background-transparent">
-                        <small>IT Supplies</small>
-                    </a>
-                </li>
-                <li class="nav-item text-center me-4 category-item">
-                    <a class="nav-link text-center text-dark px-0 lh-sm" href="#">
-                        <img src="/img/electrical.avif" alt="Office Supplies" width="36"
-                            class="d-block mx-auto mb-1 border-0 background-transparent">
-                        <small>Office Supplies</small>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="hover-modal">
-            <div class="row">
-                <div class="col-md-3">
-                    <h6 class="sub-cat"><b>AWARDS & RECOGNITION</b></h6>
-                    <span class="bg-linear-gradient w-5"></span>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Medals</a></li>
-                        <li><a href="#">Momentoes</a></li>
-                        <li><a href="#">Trophies</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6 class="sub-cat"><b>BAGS</b></h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Backpacks</a></li>
-                        <li><a href="#">Laptop Bags</a></li>
-                        <li><a href="#">Trolley Bags</a></li>
-                        <li><a href="#">Jute Bags</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6 class="sub-cat"><b>DRINKWARE</b></h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Ceramic Mugs</a></li>
-                        <li><a href="#">Copper Bottles</a></li>
-                        <li><a href="#">Steel Bottles</a></li>
-                        <li><a href="#">Sippers</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6 class="sub-cat"><b>GADGETS & APPAREL</b></h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Powerbanks</a></li>
-                        <li><a href="#">Smartwatches</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Jackets</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<!-- Category Content -->
-<section class="home-section pt-0">
-    <div class="mb-3 categoryBanner background-blue text-center">
-        <!-- <h2 class="h4 mb-1">Power Tools</h2>
+    <!-- Category Content -->
+    <section class="home-section pt-0">
+        <div class="mb-3 categoryBanner background-blue text-center">
+            <!-- <h2 class="h4 mb-1">Power Tools</h2>
             <p class="text-muted mb-0">Professional-grade power tools for industrial and commercial use</p> -->
-    </div>
-    <div class="container-fluid px-lg-5 subcategories">
-
-        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2 mb-3">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Power Tools</li>
-                </ol>
-            </nav>
         </div>
+        <div class="container-fluid px-lg-5 subcategories">
 
-        <!-- Top subcategories: Drills, Grinders, Sanders (full width) -->
-        <div class="mb-4">
-
-            <!-- Drills section -->
-
-            <section class="home-section pt-0">
-                <div class="container-fluid">
-                    <div class="section-header">
-                        <h5>Drills</h5>
-                        <a href="/category/1-1" class="section-view-all">View All &rarr;</a>
-                    </div>
-
-                    <div class="row g-2 flex-nowrap overflow-auto pb-2 flex-grow-1">
-
-
-                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                            <a href="#" class="text-decoration-none text-dark d-block">
-                                <div class="cat-deal-card shadow-lg">
-                                    <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Bosch GSB 501 500W Professional Impact Drill">
-                                    <div class="cat-deal-body">
-                                        <p class="cat-deal-title mb-0">Bosch GSB 501 500W Professional Impact
-                                            Drill
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                            <a href="#" class="text-decoration-none text-dark d-block">
-                                <div class="cat-deal-card shadow-lg">
-                                    <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Black+Decker KR554RE 550W 13mm VSR Reversible Impact Drill">
-                                    <div class="cat-deal-body">
-                                        <p class="cat-deal-title mb-0">Black+Decker KR554RE 550W 13mm VSR
-                                            Reversible Impact Drill</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                            <a href="#" class="text-decoration-none text-dark d-block">
-                                <div class="cat-deal-card shadow-lg">
-                                    <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Dewalt DWD024 750W 13mm Impact Drill">
-                                    <div class="cat-deal-body">
-                                        <p class="cat-deal-title mb-0">Dewalt DWD024 750W 13mm Impact Drill</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                            <a href="#" class="text-decoration-none text-dark d-block">
-                                <div class="cat-deal-card shadow-lg">
-                                    <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Makita Hp1630 710W 5/8inch Hammer Drill">
-                                    <div class="cat-deal-body">
-                                        <p class="cat-deal-title mb-0">Makita Hp1630 710W 5/8inch Hammer Drill
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Grinders section -->
-            <div class="mb-4 ">
-                <div class="d-flex justify-content-between align-items-baseline mb-2">
-                    <h3 class="h6 mb-0 subcategories-head">Grinders</h3>
-                    <a href="/category/1-2" class="small text-decoration-none">View All</a>
-                </div>
-                <div class="row g-3 flex-nowrap overflow-auto pb-2 flex-grow-1">
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/201" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Bosch GWS 600 Professional Angle Grinder">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Bosch GWS 600 Professional Angle Grinder
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/202" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Stanley STGS9100 900W 100mm Small Angle Grinder">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Stanley STGS9100 900W 100mm Small Angle
-                                        Grinder</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/203" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Dewalt DW801 850W 100mm Heavy Duty Angle Grinder">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Dewalt DW801 850W 100mm Heavy Duty Angle
-                                        Grinder</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/204" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Makita 9553NB 710W 4 inch Angle Grinder">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Makita 9553NB 710W 4 inch Angle Grinder
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2 mb-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Power Tools</li>
+                    </ol>
+                </nav>
             </div>
 
-            <!-- Sanders section -->
-            <div class="mb-0 mt-4">
-                <div class="d-flex justify-content-between align-items-baseline mb-2">
-                    <h3 class="h6 mb-0 subcategories-head">Sanders</h3>
-                    <a href="/category/1-3" class="small text-decoration-none">View All</a>
-                </div>
-                <div class="row g-3 flex-nowrap overflow-auto pb-2 flex-grow-1">
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/301" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Bosch GSS 2300 Professional Orbital Sander">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Bosch GSS 2300 Professional Orbital
-                                        Sander
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/302" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Stanley SS30 300W Sheet Sander">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Stanley SS30 300W Sheet Sander</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/303" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Dewalt DWE6411 1/4 Sheet Orbital Sander">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Dewalt DWE6411 1/4 Sheet Orbital Sander
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
-                        <a href="/products/304" class="text-decoration-none text-dark d-block">
-                            <div class="cat-deal-card shadow-lg">
-                                <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img"
-                                    alt="Makita BO3710 190W Finishing Sander">
-                                <div class="cat-deal-body">
-                                    <p class="cat-deal-title mb-0">Makita BO3710 190W Finishing Sander</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- Top subcategories: Drills, Grinders, Sanders (full width) -->
+            <div class="mb-4">
 
-        </div>
+                <!-- Drills section -->
 
-        <!-- Filters + Products in Power Tools side by side -->
-        <div class="row g-4 align-items-start">
-            <!-- Filters column -->
-            <aside class="col-lg-3 col-sm-2 filter">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <p class="mb-0 fw-semibold">Brands</p>
-                            <p class="mb-0 text-muted small">0 selected</p>
+                <section class="home-section pt-0">
+                    <div class="container-fluid">
+                        <div class="section-header">
+                            <h5>Drills</h5>
+                            <a href="/category/1-1" class="section-view-all">View All &rarr;</a>
                         </div>
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text bg-light border-0">
-                                🔍
-                            </span>
-                            <input type="text" class="form-control border-0 bg-light" placeholder="Search brands...">
-                        </div>
-                        <div class="d-flex flex-column gap-2 mb-3 small">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandBosch">
-                                <label class="form-check-label" for="brandBosch">Bosch (4)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandBlackDecker">
-                                <label class="form-check-label" for="brandBlackDecker">Black+Decker
-                                    (2)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandDewalt">
-                                <label class="form-check-label" for="brandDewalt">Dewalt (3)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandMakita">
-                                <label class="form-check-label" for="brandMakita">Makita (3)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandStanley">
-                                <label class="form-check-label" for="brandStanley">Stanley (2)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandCamlin">
-                                <label class="form-check-label" for="brandCamlin">Camlin (6)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="brandTaparia">
-                                <label class="form-check-label" for="brandTaparia">Taparia (1)</label>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-primary w-100 btn-sm">Reset All
-                            Filters</button>
-                    </div>
-                </div>
-            </aside>
 
-            <!-- Products in Power Tools -->
-            <div class="col-lg-9 col-sm-8">
-                <div class="d-flex justify-content-between mb-3">
-                    <h2 class="cat-title">Products in Power Tools</h2>
-                    <div class="d-flex justify-content-end mb-3">
-                        <select class="form-select form-select-sm cat-pro-sort" style="max-width: 220px;">
-                            <option>Default Sorting</option>
-                            <option>Price: Low to High</option>
-                            <option>Price: High to Low</option>
-                            <option>Newest First</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Grid of products -->
-                <div class="row g-3">
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/1" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Camlin Marker Pen Easily Erasable">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Camlin Marker Pen Easily Erasable</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
+                        <div class="row g-2 flex-nowrap overflow-auto pb-2 flex-grow-1">
+
+
+                            <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                                <a href="#" class="text-decoration-none text-dark d-block">
+                                    <div class="cat-deal-card shadow-lg">
+                                        <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Bosch GSB 501 500W Professional Impact Drill">
+                                        <div class="cat-deal-body">
+                                            <p class="cat-deal-title mb-0">Bosch GSB 501 500W Professional Impact
+                                                Drill
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/2" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Camlin Marker Ink-Black-Pack of 3">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Camlin Marker Ink-Black-Pack of 3</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
+
+                            <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                                <a href="#" class="text-decoration-none text-dark d-block">
+                                    <div class="cat-deal-card shadow-lg">
+                                        <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Black+Decker KR554RE 550W 13mm VSR Reversible Impact Drill">
+                                        <div class="cat-deal-body">
+                                            <p class="cat-deal-title mb-0">Black+Decker KR554RE 550W 13mm VSR
+                                                Reversible Impact Drill</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/3" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Camlin Marker Ink-Black-Pack of 2">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Camlin Marker Ink-Black-Pack of 2</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
+
+                            <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                                <a href="#" class="text-decoration-none text-dark d-block">
+                                    <div class="cat-deal-card shadow-lg">
+                                        <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Dewalt DWD024 750W 13mm Impact Drill">
+                                        <div class="cat-deal-body">
+                                            <p class="cat-deal-title mb-0">Dewalt DWD024 750W 13mm Impact Drill</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/4" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Camlin Brush Pens - 24 Shades">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Camlin Brush Pens - 24 Shades</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
+
+                            <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                                <a href="#" class="text-decoration-none text-dark d-block">
+                                    <div class="cat-deal-card shadow-lg">
+                                        <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Makita Hp1630 710W 5/8inch Hammer Drill">
+                                        <div class="cat-deal-body">
+                                            <p class="cat-deal-title mb-0">Makita Hp1630 710W 5/8inch Hammer Drill
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+
+                        </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/5" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
+                </section>
+
+                <!-- Grinders section -->
+                <div class="mb-4 ">
+                    <div class="d-flex justify-content-between align-items-baseline mb-2">
+                        <h3 class="h6 mb-0 subcategories-head">Grinders</h3>
+                        <a href="/category/1-2" class="small text-decoration-none">View All</a>
+                    </div>
+                    <div class="row g-3 flex-nowrap overflow-auto pb-2 flex-grow-1">
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/201" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
                                     <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Camlin Kokuyo White Board Marker Pen">
+                                        alt="Bosch GWS 600 Professional Angle Grinder">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Bosch GWS 600 Professional Angle Grinder
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Camlin Kokuyo White Board Marker Pen</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/6" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
+                            </a>
+                        </div>
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/202" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
                                     <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img"
-                                        alt="Camlin Kokuyo Pb White Board Marker">
+                                        alt="Stanley STGS9100 900W 100mm Small Angle Grinder">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Stanley STGS9100 900W 100mm Small Angle
+                                            Grinder</p>
+                                    </div>
                                 </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Camlin Kokuyo Pb White Board Marker</p>
+                            </a>
+                        </div>
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/203" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
+                                    <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
+                                        alt="Dewalt DW801 850W 100mm Heavy Duty Angle Grinder">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Dewalt DW801 850W 100mm Heavy Duty Angle
+                                            Grinder</p>
+                                    </div>
                                 </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/7" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img" alt="Product 7">
+                            </a>
+                        </div>
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/204" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
+                                    <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
+                                        alt="Makita 9553NB 710W 4 inch Angle Grinder">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Makita 9553NB 710W 4 inch Angle Grinder
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Product 7</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/8" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img" alt="Product 8">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Product 8</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/9" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img" alt="Product 9">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Product 9</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/10" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img" alt="Product 10">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Product 10</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/11" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img" alt="Product 11">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Product 11</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-xl-3">
-                        <a href="/products/12" class="text-decoration-none text-dark">
-                            <div class="card h-100 border-0 shadow-sm cat-product-card">
-                                <div class="ratio ratio-4x3 bg-white">
-                                    <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img" alt="Product 12">
-                                </div>
-                                <div class="card-body py-2">
-                                    <p class="card-text small mb-0">Product 12</p>
-                                </div>
-                                <button class="card-footer btn btn-primary bottom-rounded border-0">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-outline-primary btn-sm px-4">Load More</button>
+
+                <!-- Sanders section -->
+                <div class="mb-0 mt-4">
+                    <div class="d-flex justify-content-between align-items-baseline mb-2">
+                        <h3 class="h6 mb-0 subcategories-head">Sanders</h3>
+                        <a href="/category/1-3" class="small text-decoration-none">View All</a>
+                    </div>
+                    <div class="row g-3 flex-nowrap overflow-auto pb-2 flex-grow-1">
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/301" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
+                                    <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
+                                        alt="Bosch GSS 2300 Professional Orbital Sander">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Bosch GSS 2300 Professional Orbital
+                                            Sander
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/302" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
+                                    <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
+                                        alt="Stanley SS30 300W Sheet Sander">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Stanley SS30 300W Sheet Sander</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/303" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
+                                    <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img"
+                                        alt="Dewalt DWE6411 1/4 Sheet Orbital Sander">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Dewalt DWE6411 1/4 Sheet Orbital Sander
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-7 col-sm-3 col-md-2-4 col-lg-3">
+                            <a href="/products/304" class="text-decoration-none text-dark d-block">
+                                <div class="cat-deal-card shadow-lg">
+                                    <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img"
+                                        alt="Makita BO3710 190W Finishing Sander">
+                                    <div class="cat-deal-body">
+                                        <p class="cat-deal-title mb-0">Makita BO3710 190W Finishing Sander</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Filters + Products in Power Tools side by side -->
+            <div class="row g-4 align-items-start">
+                <!-- Filters column -->
+                <aside class="col-lg-3 col-sm-2 filter">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="mb-0 fw-semibold">Brands</p>
+                                <p class="mb-0 text-muted small">0 selected</p>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text bg-light border-0">
+                                    🔍
+                                </span>
+                                <input type="text" class="form-control border-0 bg-light"
+                                    placeholder="Search brands...">
+                            </div>
+                            <div class="d-flex flex-column gap-2 mb-3 small">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandBosch">
+                                    <label class="form-check-label" for="brandBosch">Bosch (4)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandBlackDecker">
+                                    <label class="form-check-label" for="brandBlackDecker">Black+Decker
+                                        (2)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandDewalt">
+                                    <label class="form-check-label" for="brandDewalt">Dewalt (3)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandMakita">
+                                    <label class="form-check-label" for="brandMakita">Makita (3)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandStanley">
+                                    <label class="form-check-label" for="brandStanley">Stanley (2)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandCamlin">
+                                    <label class="form-check-label" for="brandCamlin">Camlin (6)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brandTaparia">
+                                    <label class="form-check-label" for="brandTaparia">Taparia (1)</label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100 btn-sm">Reset All
+                                Filters</button>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products in Power Tools -->
+                <div class="col-lg-9 col-sm-8">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h2 class="cat-title">Products in Power Tools</h2>
+                        <div class="d-flex justify-content-end mb-3">
+                            <select class="form-select form-select-sm cat-pro-sort" style="max-width: 220px;">
+                                <option>Default Sorting</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Grid of products -->
+                    <div class="row g-3">
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/1" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Camlin Marker Pen Easily Erasable">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Camlin Marker Pen Easily Erasable</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/2" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Camlin Marker Ink-Black-Pack of 3">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Camlin Marker Ink-Black-Pack of 3</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/3" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Camlin Marker Ink-Black-Pack of 2">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Camlin Marker Ink-Black-Pack of 2</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/4" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Camlin Brush Pens - 24 Shades">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Camlin Brush Pens - 24 Shades</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/5" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Camlin Kokuyo White Board Marker Pen">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Camlin Kokuyo White Board Marker Pen</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/6" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Camlin Kokuyo Pb White Board Marker">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Camlin Kokuyo Pb White Board Marker</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/7" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/1.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Product 7">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Product 7</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/8" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/2.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Product 8">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Product 8</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/9" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/3.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Product 9">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Product 9</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/10" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/4.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Product 10">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Product 10</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/11" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/5.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Product 11">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Product 11</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <a href="/products/12" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 shadow-sm cat-product-card">
+                                    <div class="ratio ratio-4x3 bg-white">
+                                        <img src="/img/6.webp" class="img-fluid p-3 cat-product-card-img"
+                                            alt="Product 12">
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <p class="card-text small mb-0">Product 12</p>
+                                    </div>
+                                    <button class="card-footer btn btn-primary bottom-rounded border-0">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="button" class="btn btn-outline-primary btn-sm px-4">Load More</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <!-- Features Section -->
-    <div class="footer-features py-4">
-        <div class="container">
-            <div class="row g-4 footer-card">
-                <div class="col-md-3 col-6">
-                    <div class="footer-feature text-center shadow-lg">
-                        <div class="feature-icon mb-2">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
-                                stroke-width="1.5">
-                                <path
-                                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                                </path>
-                                <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                            </svg>
-                        </div>
-                        <h6 class="fw-bold mb-2">Great Value</h6>
-                        <p class="small text-muted">Most popular brands with widest range of selection at best
-                            prices.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="footer-feature text-center shadow-lg">
-                        <div class="feature-icon mb-2">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d92027"
-                                stroke-width="1.5">
-                                <rect x="1" y="3" width="15" height="13" rx="1"></rect>
-                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                            </svg>
-                        </div>
-                        <h6 class="fw-bold mb-2">Pan India Delivery</h6>
-                        <p class="small text-muted">Over 16,000<b>+</b> pincodes serviceable across India.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="footer-feature text-center shadow-lg">
-                        <div class="feature-icon mb-2">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
-                                stroke-width="1.5">
-                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                <line x1="1" y1="10" x2="23" y2="10"></line>
-                                <path d="M12 15h4"></path>
-                            </svg>
-                        </div>
-                        <h6 class="fw-bold mb-2">Secure Payment</h6>
-                        <p class="small text-muted">Partnered with India's most popular and secure payment
-                            solutions.</p>
-                        <div class="payment-icons d-flex justify-content-center gap-2 mt-2">
-                            <img alt="Visa" width="40" height="24" src="/img/visa-icon.svg">
-                            <img alt="Mastercard" width="40" height="24" src="/img/master-card-icon.svg">
-                            <img alt="Razorpay" width="48" height="24" src="/img/razorpay-icon.svg">
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Features Section -->
+        <div class="footer-features py-4">
+            <div class="container">
+                <div class="row g-4 footer-card">
+                    <div class="col-md-3 col-6">
+                        <div class="footer-feature text-center shadow-lg">
+                            <div class="feature-icon mb-2">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
+                                    </path>
+                                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold mb-2">Great Value</h6>
+                            <p class="small text-muted">Most popular brands with widest range of selection at best
+                                prices.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="footer-feature text-center shadow-lg">
-                        <div class="feature-icon mb-2">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d92027"
-                                stroke-width="1.5">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                <polyline points="9 12 11 14 15 10"></polyline>
-                            </svg>
-                        </div>
-                        <h6 class="fw-bold mb-2">Buyer Protection</h6>
-                        <p class="small text-muted">Committed to buyer interests to provide a smooth shopping
-                            experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Links Section -->
-    <div class="footer-links py-2 bg-light">
-        <div class="container-fluid mx-4">
-            <div class="row g-4">
-                <div class="col-lg-2 col-md-4">
-                    <div class="footer-column">
-                        <h6 class="fw-bold mb-3">Corporate Buyings</h6>
-                        <div class="d-flex flex-column gap-2">
-                            <a href="/about" class="text-decoration-none small">About Us</a>
-                            <a href="#" class="text-decoration-none small">Careers</a>
-                            <a href="#" class="text-decoration-none small">Press</a>
-                            <a href="#" class="text-decoration-none small">Testimonials</a>
-                            <a href="#" class="text-decoration-none small">Blog</a>
-                            <a href="#" class="text-decoration-none small">Articles</a>
+                    <div class="col-md-3 col-6">
+                        <div class="footer-feature text-center shadow-lg">
+                            <div class="feature-icon mb-2">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d92027"
+                                    stroke-width="1.5">
+                                    <rect x="1" y="3" width="15" height="13" rx="1"></rect>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold mb-2">Pan India Delivery</h6>
+                            <p class="small text-muted">Over 16,000<b>+</b> pincodes serviceable across India.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="footer-column">
-                        <h6 class="fw-bold mb-3">Help</h6>
-                        <div class="d-flex flex-column gap-2">
-                            <a href="/cart" class="text-decoration-none small">Request For Quote</a>
-                            <a href="/contact" class="text-decoration-none small">Contact Us</a>
-                            <a href="#" class="text-decoration-none small">Track My Order</a>
-                            <a href="#" class="text-decoration-none small">Buying Guide</a>
+                    <div class="col-md-3 col-6">
+                        <div class="footer-feature text-center shadow-lg">
+                            <div class="feature-icon mb-2">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
+                                    stroke-width="1.5">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                    <path d="M12 15h4"></path>
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold mb-2">Secure Payment</h6>
+                            <p class="small text-muted">Partnered with India's most popular and secure payment
+                                solutions.</p>
+                            <div class="payment-icons d-flex justify-content-center gap-2 mt-2">
+                                <img alt="Visa" width="40" height="24" src="/img/visa-icon.svg">
+                                <img alt="Mastercard" width="40" height="24" src="/img/master-card-icon.svg">
+                                <img alt="Razorpay" width="48" height="24" src="/img/razorpay-icon.svg">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <div class="footer-column">
-                        <h6 class="fw-bold mb-3">FAQs</h6>
-                        <div class="d-flex flex-column gap-2">
-                            <a href="#" class="text-decoration-none small">Order Tracking</a>
-                            <a href="#" class="text-decoration-none small">Cancellation and Return</a>
-                            <a href="#" class="text-decoration-none small">Refund</a>
-                            <a href="#" class="text-decoration-none small">Payment Option</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="footer-column">
-                        <h6 class="fw-bold mb-3">Our Brands</h6>
-                        <div class="d-flex flex-column gap-2">
-                            <a href="#" class="text-decoration-none small">Popular Searches</a>
-                            <a href="#" class="text-decoration-none small">Best Deals</a>
-                            <a href="#" class="text-decoration-none small">Online Assist</a>
-                            <a href="#" class="text-decoration-none small">Industry Store</a>
-                            <a href="#" class="text-decoration-none small">Top Buying Requirement</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="footer-column">
-                        <h6 class="fw-bold mb-3">Miscellaneous</h6>
-                        <div class="d-flex flex-column gap-2">
-                            <a href="/contact" class="text-decoration-none small">Bulk Enquiry</a>
-                            <a href="#" class="text-decoration-none small">Business Solutions</a>
-                            <a href="#" class="text-decoration-none small">Supplier Central</a>
-                            <a href="#" class="text-decoration-none small">Partner With Us</a>
+                    <div class="col-md-3 col-6">
+                        <div class="footer-feature text-center shadow-lg">
+                            <div class="feature-icon mb-2">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d92027"
+                                    stroke-width="1.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    <polyline points="9 12 11 14 15 10"></polyline>
+                                </svg>
+                            </div>
+                            <h6 class="fw-bold mb-2">Buyer Protection</h6>
+                            <p class="small text-muted">Committed to buyer interests to provide a smooth shopping
+                                experience.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Copyright -->
-    <div class="footer-copyright py-2">
-        <div class="container">
-            <p class="text-center small text-muted mb-0">© 2026 Corporate Buyings. All rights reserved.</p>
+        <!-- Links Section -->
+        <div class="footer-links py-2 bg-light">
+            <div class="container-fluid mx-4">
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-column">
+                            <h6 class="fw-bold mb-3">Corporate Buyings</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="/about" class="text-decoration-none small">About Us</a>
+                                <a href="#" class="text-decoration-none small">Careers</a>
+                                <a href="#" class="text-decoration-none small">Press</a>
+                                <a href="#" class="text-decoration-none small">Testimonials</a>
+                                <a href="#" class="text-decoration-none small">Blog</a>
+                                <a href="#" class="text-decoration-none small">Articles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-column">
+                            <h6 class="fw-bold mb-3">Help</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="/cart" class="text-decoration-none small">Request For Quote</a>
+                                <a href="/contact" class="text-decoration-none small">Contact Us</a>
+                                <a href="#" class="text-decoration-none small">Track My Order</a>
+                                <a href="#" class="text-decoration-none small">Buying Guide</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-column">
+                            <h6 class="fw-bold mb-3">FAQs</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#" class="text-decoration-none small">Order Tracking</a>
+                                <a href="#" class="text-decoration-none small">Cancellation and Return</a>
+                                <a href="#" class="text-decoration-none small">Refund</a>
+                                <a href="#" class="text-decoration-none small">Payment Option</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-column">
+                            <h6 class="fw-bold mb-3">Our Brands</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#" class="text-decoration-none small">Popular Searches</a>
+                                <a href="#" class="text-decoration-none small">Best Deals</a>
+                                <a href="#" class="text-decoration-none small">Online Assist</a>
+                                <a href="#" class="text-decoration-none small">Industry Store</a>
+                                <a href="#" class="text-decoration-none small">Top Buying Requirement</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-column">
+                            <h6 class="fw-bold mb-3">Miscellaneous</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="/contact" class="text-decoration-none small">Bulk Enquiry</a>
+                                <a href="#" class="text-decoration-none small">Business Solutions</a>
+                                <a href="#" class="text-decoration-none small">Supplier Central</a>
+                                <a href="#" class="text-decoration-none small">Partner With Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Copyright -->
+        <div class="footer-copyright py-2">
+            <div class="container">
+                <p class="text-center small text-muted mb-0">© 2026 Corporate Buyings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script>
-    // Position hover modal dynamically
-    // /*
-    document.addEventListener('DOMContentLoaded', function () {
-        const categoryItems = document.querySelectorAll('.category-item');
-        const hoverModal = document.querySelector('.hover-modal');
-        let hideTimeoutId = null;
+    <script>
+        // Position hover modal dynamically
+        // /*
+        document.addEventListener('DOMContentLoaded', function () {
+            const categoryItems = document.querySelectorAll('.category-item');
+            const hoverModal = document.querySelector('.hover-modal');
+            let hideTimeoutId = null;
 
-        function cancelHide() {
-            if (hideTimeoutId) {
-                clearTimeout(hideTimeoutId);
-                hideTimeoutId = null;
+            function cancelHide() {
+                if (hideTimeoutId) {
+                    clearTimeout(hideTimeoutId);
+                    hideTimeoutId = null;
+                }
             }
-        }
 
-        function hideModalNow() {
-            hoverModal.style.opacity = '0';
-            hoverModal.style.visibility = 'hidden';
-            if (window.innerWidth <= 576) {
-                hoverModal.style.transform = 'translate(-50%, -8px)';
-            } else {
-                hoverModal.style.transform = 'translateY(-8px)';
-            }
-            hoverModal.style.pointerEvents = 'none';
-        }
-
-        function hideModalDelayed() {
-            cancelHide();
-            hideTimeoutId = setTimeout(hideModalNow, 100);
-        }
-
-        categoryItems.forEach(item => {
-            item.addEventListener('mouseenter', function () {
-                cancelHide();
-                const rect = this.getBoundingClientRect();
-                const container = this.parentElement.parentElement;
-                const parentRect = container.getBoundingClientRect();
-
-                // compute initial left relative to container
-                let left = rect.left - parentRect.left;
-
-                // Temporarily place the modal so it can be measured without displaying (visible but transparent)
-                hoverModal.style.left = left + 'px';
-                hoverModal.style.visibility = 'visible';
+            function hideModalNow() {
                 hoverModal.style.opacity = '0';
+                hoverModal.style.visibility = 'hidden';
+                if (window.innerWidth <= 576) {
+                    hoverModal.style.transform = 'translate(-50%, -8px)';
+                } else {
+                    hoverModal.style.transform = 'translateY(-8px)';
+                }
                 hoverModal.style.pointerEvents = 'none';
-                hoverModal.style.transform = 'translateY(-8px)';
+            }
 
-                // measure modal width and container width
-                const modalWidth = hoverModal.getBoundingClientRect().width;
-                const containerWidth = parentRect.width;
-                const padding = 8; // space from edge
-
-                // On very small screens, center the modal
-                if (window.innerWidth <= 576) {
-                    hoverModal.style.left = '50%';
-                    hoverModal.style.transform = 'translate(-50%, 0)';
-                } else {
-                    // if modal overflows to the right, shift it left
-                    if (left + modalWidth > containerWidth - padding) {
-                        left = Math.max(0, containerWidth - modalWidth - padding);
-                        hoverModal.style.left = left + 'px';
-                    }
-                    // ensure it slides into view from above
-                    hoverModal.style.transform = 'translateY(0)';
-                }
-
-                // show modal
-                hoverModal.style.opacity = '1';
-                hoverModal.style.visibility = 'visible';
-                hoverModal.style.pointerEvents = 'auto';
-            });
-
-            hoverModal.addEventListener('mouseenter', function () {
+            function hideModalDelayed() {
                 cancelHide();
-                hoverModal.style.opacity = '1';
-                hoverModal.style.visibility = 'visible';
-                hoverModal.style.pointerEvents = 'auto';
-                if (window.innerWidth <= 576) {
-                    hoverModal.style.transform = 'translate(-50%, 0)';
-                } else {
-                    hoverModal.style.transform = 'translateY(0)';
-                }
-            });
-            hoverModal.addEventListener('mouseleave', function () {
-                hideModalDelayed();
-            });
+                hideTimeoutId = setTimeout(hideModalNow, 100);
+            }
 
-            item.addEventListener('mouseleave', function () {
-                hideModalDelayed();
+            categoryItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    cancelHide();
+                    const rect = this.getBoundingClientRect();
+                    const container = this.parentElement.parentElement;
+                    const parentRect = container.getBoundingClientRect();
+
+                    // compute initial left relative to container
+                    let left = rect.left - parentRect.left;
+
+                    // Temporarily place the modal so it can be measured without displaying (visible but transparent)
+                    hoverModal.style.left = left + 'px';
+                    hoverModal.style.visibility = 'visible';
+                    hoverModal.style.opacity = '0';
+                    hoverModal.style.pointerEvents = 'none';
+                    hoverModal.style.transform = 'translateY(-8px)';
+
+                    // measure modal width and container width
+                    const modalWidth = hoverModal.getBoundingClientRect().width;
+                    const containerWidth = parentRect.width;
+                    const padding = 8; // space from edge
+
+                    // On very small screens, center the modal
+                    if (window.innerWidth <= 576) {
+                        hoverModal.style.left = '50%';
+                        hoverModal.style.transform = 'translate(-50%, 0)';
+                    } else {
+                        // if modal overflows to the right, shift it left
+                        if (left + modalWidth > containerWidth - padding) {
+                            left = Math.max(0, containerWidth - modalWidth - padding);
+                            hoverModal.style.left = left + 'px';
+                        }
+                        // ensure it slides into view from above
+                        hoverModal.style.transform = 'translateY(0)';
+                    }
+
+                    // show modal
+                    hoverModal.style.opacity = '1';
+                    hoverModal.style.visibility = 'visible';
+                    hoverModal.style.pointerEvents = 'auto';
+                });
+
+                hoverModal.addEventListener('mouseenter', function () {
+                    cancelHide();
+                    hoverModal.style.opacity = '1';
+                    hoverModal.style.visibility = 'visible';
+                    hoverModal.style.pointerEvents = 'auto';
+                    if (window.innerWidth <= 576) {
+                        hoverModal.style.transform = 'translate(-50%, 0)';
+                    } else {
+                        hoverModal.style.transform = 'translateY(0)';
+                    }
+                });
+                hoverModal.addEventListener('mouseleave', function () {
+                    hideModalDelayed();
+                });
+
+                item.addEventListener('mouseleave', function () {
+                    hideModalDelayed();
+                });
             });
         });
-    });
 
-    // */
-</script>
+        // */
+    </script>
 </body>
 
 </html>
