@@ -1,0 +1,205 @@
+.brandBanner {
+    background-image: url('/img/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 5.1%;
+}
+
+.brands-head {
+    background-image: linear-gradient(135deg, #e84a3d 0%, #2a348c 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.brand-title {
+    background-image: linear-gradient(135deg, #e84a3d 0%, #2a348c 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.brand-product-card-img {
+    object-fit: contain;
+}
+
+.brand-pro-card {
+    flex-basis: 22%;
+}
+
+/* Basic card tweaks */
+.brand-product-card {
+    border-radius: 12px;
+}
+
+/* Brand card title + Call button row */
+.brand-card-title {
+    flex: 1;
+    margin-right: 0.35rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.brand-card-pro-btns {
+    top: 7px;
+    left: 140px;
+}
+
+.brand-call-btn {
+    padding-inline: 0.5rem;
+    padding-block: 0.15rem;
+    font-size: 0.7rem;
+    border-radius: 999px;
+    border: none;
+    /* background-image: linear-gradient(135deg, #e84a3d 0%, #2a348c 100%); */
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Category page versions of homepage deal-card styles */
+.brand-deal-card {
+    border-radius: 18px;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+}
+
+.brand-deal-card img {
+    height: 170px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.brand-deal-body {
+    padding: 0.9rem 0.95rem 1rem;
+}
+
+.brand-deal-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111827;
+    margin: 0;
+    line-height: 1.3;
+    max-height: 2.6em;
+    min-height: 2.6em;
+    /* keep title block same height for all cards */
+    overflow: hidden;
+}
+
+/* Small devices (portrait phones) */
+@media (max-width: 575.98px) {
+    .brandBanner {
+        height: 220px;
+        padding: 1.5rem 1rem;
+        background-position: center;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .home-section {
+        padding-top: 0.5rem;
+    }
+
+    .brand-title {
+        font-size: 1.2rem;
+    }
+
+    .brand-product-card-img {
+        max-height: 110px;
+    }
+
+    .brand-product-card .card-body {
+        padding: 0.5rem 0.6rem;
+    }
+}
+
+/* Medium devices (landscape phones, small tablets) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .brandBanner {
+        height: 280px;
+        padding: 2rem 1.5rem;
+        background-position: center;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+    .brandBanner {
+        height: 150px;
+        padding: 2rem 1.5rem;
+        margin-top: 0;
+        background-position: center;
+    }
+
+    .brand-card-pro-btns {
+        left: 135px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .brandBanner {
+        height: 114px;
+    }
+
+    .brand-card-pro-btns {
+        left: 112px;
+
+    }
+}
+
+/* Large devices and up (keep content a bit tighter) */
+@media (min-width: 992px) {
+    .home-section .container-fluid {
+        max-width: 1320px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+    .brand-product-card-img {
+        max-height: 130px;
+    }
+
+    .brandBanner {
+        /* height: 114px; */
+        width: 107vw;
+        background-size: contain;
+        margin-top: 0;
+    }
+
+    .brands {
+        width: 105vw;
+    }
+
+    .brand-deal-card {
+        height: 175px;
+    }
+
+    .brand-title {
+        font-size: 0.7rem;
+        padding-top: 8px;
+    }
+
+    .brand-pro-sort {
+        font-size: 0.575rem;
+    }
+
+    .brand-card-pro-btns {
+        flex-direction: column;
+        top: 4px;
+    }
+
+}
