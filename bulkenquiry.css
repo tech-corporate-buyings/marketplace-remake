@@ -1,0 +1,74 @@
+.contact-page {
+    /* margin-top: 5.1%; */
+}
+
+.contact-hero {
+    background-color: #f5f7ff;
+    padding-bottom: 0;
+    height: 30vh;
+}
+
+.contact-hero-banner {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 60%, #111827 100%);
+    border-radius: 0 8rem 5rem 0;
+    min-height: 190px;
+    width: 106%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    height: 50%;
+}
+
+/* Let the hero row define a sensible minimum height so both sides match */
+.contact-hero .row {
+    min-height: 190px;
+}
+
+/* Ensure the image column can stretch to match banner height */
+.contact-hero-image {
+    height: 50%;
+}
+
+@media (max-width: 767.98px) {
+    .contact-page {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .contact-hero-banner {
+        border-radius: 0 0 2rem 2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:319px) and (max-width:769px) {
+    .contact-hero{
+        display: none;
+    }
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.object-position-top-20 {
+    object-position: center 20%;
+}
+
+.contact-card {
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e0edff;
+    color: #2563eb;
+}
+
+.contact-form-card {
+    border-radius: 1.25rem;
+}
