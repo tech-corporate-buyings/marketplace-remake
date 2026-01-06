@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -215,6 +216,13 @@ body {
       min-width: 150px;
     }
   }
+  .clienttitle {
+    font-size: 0.9rem !important;
+
+    b {
+      font-size: 1.5rem !important;
+    }
+  }
 
   .footer-feature {
     .feature-icon {
@@ -237,14 +245,6 @@ body {
   }
 }
 
-.clienttitle {
-  font-size: 0.9rem !important;
-
-  b {
-    font-size: 1.5rem !important;
-  }
-}
-
 .navbar {
   border-bottom: 1px solid #f1f3f5;
   padding-top: 0;
@@ -254,6 +254,41 @@ body {
 
 .category-nav {
   background: transparent;
+}
+
+.dropdown-menu {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  background: radial-gradient(
+      ellipse at 0% 0%,
+      rgba(42, 52, 140, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 100% 100%,
+      rgba(232, 74, 61, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(to bottom, #ffffff 0%, #fafbff 100%);
+}
+
+.cart-icon {
+}
+
+.cart-icon:hover {
+  background: radial-gradient(
+      ellipse at 0% 0%,
+      rgba(42, 52, 140, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 100% 100%,
+      rgba(232, 74, 61, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(to bottom, #ffffff 0%, #c5c4df 100%);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-1px);
 }
 
 .navbar-brand img {
@@ -696,8 +731,7 @@ input:focus {
 .testimonials-section {
   background: #f9fafb;
   padding: 80px 24px;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .testimonials-section .section-head {
